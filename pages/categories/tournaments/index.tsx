@@ -1,3 +1,3 @@
 export default function Tournaments() {
-  return <div>Mis torneos </div>;
+  return <div>Mis torneos</div>;
 }
