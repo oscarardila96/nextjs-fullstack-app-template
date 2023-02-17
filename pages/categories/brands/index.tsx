@@ -1,3 +1,3 @@
-export default function () {
+export default function Brands() {
   return <div>todas las marcas</div>;
 }
