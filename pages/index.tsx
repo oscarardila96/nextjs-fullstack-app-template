@@ -1,36 +1,14 @@
-import Link from 'next/link';
-
 export default function Home() {
   return (
     <>
-      <nav>
-        <ul>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/profile">Profile</Link>
-          </li>
-          <li>
-            <Link href="/createEvent">+Add event</Link>
-          </li>
-          <li>
-            <Link href="/auth/login">Log In</Link>
-          </li>
-          <li>
-            <Link href="/auth/register">Sign Up</Link>
-          </li>
-          <li>
-            <Link href="/categories/artists">Artist</Link>
-          </li>
-          <li>
-            <Link href="/categories/brands">Brands</Link>
-          </li>
-          <li>
-            <Link href="/categories/tournaments">Tournaments</Link>
-          </li>
-        </ul>
-      </nav>
+      <div className="bg-purple-500">
+        <h1 className="text-cyan-500">Aqui van los componentes</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+          maxime laborum eum natus tenetur! Eius blanditiis corporis maiores
+          labore facere aperiam dignissimos quae.
+        </p>
+      </div>
     </>
   );
 }
