@@ -9,14 +9,14 @@ const links = [
     route: '/auth/login',
   },
   {
-    label: 'Sing In',
+    label: 'Sign In',
     route: '/auth/register',
   },
 ];
 
-export default function Header() {
+export default function Navbar() {
   return (
-    <header className="bg-gray-900 flex flex-row justify-between items-center py-5 px-6 min-[320px]:p4">
+    <nav className="bg-gray-900 flex flex-row justify-between items-center py-5 px-6 min-[320px]:p4">
       <h1>
         <Link href="/">
           <Image src={Logo} alt="logo" />
@@ -45,6 +45,6 @@ export default function Header() {
           ))}
         </ul>
       </nav>
-    </header>
+    </nav>
   );
 }

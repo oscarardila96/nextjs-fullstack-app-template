@@ -9,3 +9,11 @@
     fill: currentColor;
   }
 }
+
+.bgImage {
+  background-image: url('../image/png/rectangle21.jpg');
+}
+
+.headerImage {
+  background-image: url('../image/png/image-bg.png');
+}
