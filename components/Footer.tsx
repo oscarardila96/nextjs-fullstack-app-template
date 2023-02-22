@@ -1,11 +1,18 @@
+import Image from 'next/image';
+import ImageFooter from '../image/png/footer.jpg';
+import SearchInput from './atoms/Search';
+
 export default function Footer() {
   return (
-    <footer className="min-h-[488px] w-full bgImage overflow-hidden">
-      <input
-        className="relative w-[465px] px-6 py-2 top-[300px] left-[410px] rounded-full"
-        type="search"
-        placeholder="¿Qué quieres ver en tu ciudad?"
+    <footer>
+      <Image
+        className="w-full h-96 bg-center bg-no-repeat bg-cover absolute"
+        src={ImageFooter}
+        alt="image of footer"
       />
+      <div className="Footer-btnCenter relative">
+        <SearchInput />
+      </div>
     </footer>
   );
 }

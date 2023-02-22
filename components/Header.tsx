@@ -1,36 +1,31 @@
 import Image from 'next/image';
 import PcLogo from '../image/png/frame.png';
+import ImageHome from '../image/png/image-bg.png';
+import ButtonHome from './atoms/Button';
+import SearchInput from './atoms/Search';
 
 export default function Header() {
   return (
-    <>
-      <header className="w-full h-[488px] headerImage flex justify-center items-center">
-        <div className="flex flex-col gap-5 justify-center items-center">
-          <div>
-            <Image src={PcLogo} alt="Logo Image" className="relative" />
-          </div>
-          <div>
-            <div className="flex flex-col justify-center items-center mb-3">
-              <input
-                type="search"
-                placeholder="¿Qué quieres ver en tu ciudad?"
-                className="w-[465px] px-6 py-2 rounded-full"
-              />
-            </div>
-            <div className="flex justify-center items-center gap-3">
-              <button className="rounded-full bg-white text-button-gray px-3 py-1">
-                Marcas y Tiendas
-              </button>
-              <button className="rounded-full bg-white text-button-gray px-3 py-1">
-                Artistas y Conciertos
-              </button>
-              <button className="rounded-full bg-white text-button-gray px-3 py-1">
-                Torneos
-              </button>
-            </div>
-          </div>
+    <div className="flex flex-col justify-center items-center">
+      <Image
+        className="w-full h-96 bg-center bg-no-repeat bg-cover"
+        src={ImageHome}
+        alt="background image"
+      />
+
+      <div className="flex flex-col justify-center items-center gap-10 absolute z-10">
+        <div>
+          <Image src={PcLogo} alt="Logo Image" className="w-52 h-48" />
         </div>
-      </header>
-    </>
+
+        <div>
+          <SearchInput />
+        </div>
+
+        <div className="flex flex-row gap-3">
+          <ButtonHome />
+        </div>
+      </div>
+    </div>
   );
 }
