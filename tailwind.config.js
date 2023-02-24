@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         'my-custom-color': '#fffff',
+        'button-gray': '#A7A6A7',
       },
       screens: {
         xs: '375px',
