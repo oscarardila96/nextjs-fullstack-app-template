@@ -1,6 +1,7 @@
 import ButtonNext from '@/components/atoms/ButtonNext';
 import ButtonVote from '@/components/atoms/ButtonVote';
 import Love from '@/components/atoms/Love';
+import Cards from '@/components/Cards';
 import Header from '@/components/Header';
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <>
       <Header />
+      <Cards />
       <h1>Este es el título</h1>
       <p>{text}</p>
       <p>{text}</p>
