@@ -12,6 +12,7 @@ export default function Home() {
     <>
       <Header />
       <Cards />
+      <h1>Este es el título</h1>
       <p>{text}</p>
       <p>{text}</p>
       <Love />
