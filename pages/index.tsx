@@ -11,6 +11,7 @@ export default function Home() {
   return (
     <>
       <Header />
+      <h1>Este es el título</h1>
       <Cards />
       <p>{text}</p>
       <p>{text}</p>
